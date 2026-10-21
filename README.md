@@ -28,6 +28,8 @@ Then restart, or let the profile patch layer hot-reload. The bundle inserts one 
 
 Uninstall with `dsh plugin --profile web remove dsh-popup-notify`.
 
+The Plugins page shows this bundle's card from resources the package exports: `./locale/en.json` and `./locale/zh.json` supply `meta.title` and `meta.description`, and `./icon` supplies the artwork. DSH resolves those paths through Node's module resolver without loading the plugin, so a manifest that exports only `.` renders the bare package name with no description and the default icon.
+
 ## Why a modal instead of a toast
 
 Windows toasts disappear on their own and stack up in Notification Center, where it is easy to miss them. When a run is blocked waiting for *you*, a dialog that refuses to leave until dismissed is the honest representation of that state.

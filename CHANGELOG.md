@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.4
+
+- **Display metadata for the Plugins page.** The package now exports `./package.json`, `./locale/*.json`, and `./icon`, and ships `locale/en.json`, `locale/zh.json`, and `icon.svg`. Before this release the manifest's `exports` map covered only `.`, so DSH's metadata reader — which resolves `<package>/locale/<lang>.json`, `<package>/package.json`, and `<package>/icon` through Node — could reach none of them. The bundle card and its detail page therefore showed the bare package name, no description, and the default artwork. `lib/index.mjs` is unchanged from 0.1.3, so an installation on 0.1.3 runs the same code.
+- `tests/display-metadata.test.mjs` pins the exports, the non-empty `meta.title`/`meta.description` in every locale, the packed file list, and resolver reachability, so a future manifest edit cannot silently strip the card again.
+- `npm test` runs both test files; `npm run pack:check` previews the published file list.
+
 ## 0.1.3
 
 - Chinese `description`, matching the one-line summaries other DSH bundles publish: the Web Plugins page and the install dialog show it verbatim. `lib/index.mjs` is unchanged from 0.1.2.

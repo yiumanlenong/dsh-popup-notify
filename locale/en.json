@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Popup Notify",
+    "description": "Topmost Windows dialogs that stay until dismissed when a tool needs approval, the model asks you something, or a run finishes."
+  }
+}

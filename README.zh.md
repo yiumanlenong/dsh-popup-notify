@@ -28,6 +28,8 @@ dsh plugin --profile web add dsh-popup-notify
 
 卸载：`dsh plugin --profile web remove dsh-popup-notify`。
 
+插件页的卡片信息来自这个包导出的资源：`./locale/en.json` 与 `./locale/zh.json` 提供 `meta.title` 与 `meta.description`，`./icon` 提供图标。DSH 通过 Node 的模块解析读取这些路径，不会加载插件代码；所以只导出 `.` 的 manifest 在插件页上只会显示包名，没有描述，图标也是默认图形。
+
 ## 为什么用模态框而不是 toast
 
 Windows toast 会自己消失，并堆在通知中心里，很容易错过。当一次运行正卡在**等你**这一步时，一个不点掉就不走的对话框才是这个状态该有的表现。
