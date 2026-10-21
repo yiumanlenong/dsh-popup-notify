@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.2
+
+- Documentation and metadata only. `lib/index.mjs` is byte-identical to 0.1.1, so an installation on either version runs the same code.
+
 ## 0.1.1
 
 - **`engines.dsh` raised to `>=0.2.1-rc.2`.** The previous `>=0.1.7` claimed a range that was never run. Every extension point this plugin uses (`approval/request`, `tools/pre-execute`, `agent/status`, `SessionHeader.origin`/`delegationDepth`, `ToolExecution.callId`/`agent`) is declared in 0.1.7-rc.2 as well, so the lower bound was not provably wrong — but a declared compatibility range should cover only versions that were actually exercised. 0.2.1-rc.2 is the one this plugin is tested against.
