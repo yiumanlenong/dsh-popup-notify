@@ -1,7 +1,7 @@
 {
   "name": "dsh-popup-notify",
-  "version": "0.1.2",
-  "description": "Modal desktop popups for DeepSeek Harness: approval requests, questions/plan reviews, and turn completion. Zero dependencies, no bundled binaries.",
+  "version": "0.1.3",
+  "description": "通过 Windows 原生模态弹窗为 DeepSeek Harness 提醒审批请求、提问与计划审阅、回合结束；零依赖，无预编译二进制。",
   "license": "MIT",
   "type": "module",
   "main": "./lib/index.mjs",

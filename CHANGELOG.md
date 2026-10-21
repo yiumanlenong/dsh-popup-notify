@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.3
+
+- Chinese `description`, matching the one-line summaries other DSH bundles publish: the Web Plugins page and the install dialog show it verbatim. `lib/index.mjs` is unchanged from 0.1.2.
+
 ## 0.1.2
 
 - Documentation and metadata only. `lib/index.mjs` is byte-identical to 0.1.1, so an installation on either version runs the same code.
