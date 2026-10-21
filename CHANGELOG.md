@@ -1,0 +1,13 @@
+# Changelog
+
+## 0.1.1
+
+- **`engines.dsh` raised to `>=0.2.1-rc.2`.** The previous `>=0.1.7` claimed a range that was never run. Every extension point this plugin uses (`approval/request`, `tools/pre-execute`, `agent/status`, `SessionHeader.origin`/`delegationDepth`, `ToolExecution.callId`/`agent`) is declared in 0.1.7-rc.2 as well, so the lower bound was not provably wrong — but a declared compatibility range should cover only versions that were actually exercised. 0.2.1-rc.2 is the one this plugin is tested against.
+
+## 0.1.0
+
+- First release.
+- Modal topmost dialogs for approval requests, `ask_user_question`, `exit_plan_mode`, and root-agent run completion.
+- Zero npm dependencies; the dialog is a PowerShell child process driven over `-EncodedCommand`, so multi-line bodies and arbitrary quotes survive intact.
+- One dialog at a time, with a queue behind it.
+- Per-source switches, template messages, per-session completion cooldown, subagent muting, and an optional trace file.

@@ -1,6 +1,6 @@
 {
   "name": "dsh-popup-notify",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Modal desktop popups for DeepSeek Harness: approval requests, questions/plan reviews, and turn completion. Zero dependencies, no bundled binaries.",
   "license": "MIT",
   "type": "module",
@@ -13,6 +13,7 @@
     "cordis.patch.yml",
     "README.md",
     "README.zh.md",
+    "CHANGELOG.md",
     "LICENSE"
   ],
   "dsh": {
@@ -21,7 +22,7 @@
     }
   },
   "engines": {
-    "dsh": ">=0.1.7"
+    "dsh": ">=0.2.1-rc.2"
   },
   "keywords": [
     "dsh",

@@ -10,6 +10,8 @@ Modal desktop popups for DeepSeek Harness. Three moments that need you back at t
 
 Zero npm dependencies. No bundled binaries, no build step, no post-install script: 340 lines of plain ESM driving PowerShell. Windows only.
 
+Requires DeepSeek Harness `0.2.1-rc.2` or newer.
+
 ## Install
 
 ```sh

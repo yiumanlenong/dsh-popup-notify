@@ -10,6 +10,8 @@ DeepSeek Harness 的桌面弹窗提醒。三种需要你回到窗口的时刻，
 
 零 npm 依赖。没有预编译二进制、没有构建步骤、没有安装脚本：340 行纯 ESM 驱动 PowerShell。仅支持 Windows。
 
+要求 DeepSeek Harness `0.2.1-rc.2` 或更新版本。
+
 ## 安装
 
 ```sh
